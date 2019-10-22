@@ -48,14 +48,17 @@
                                     <c:if test="${param.error != null }">
                                         <div
                                             class="alert alert-danger col-xs-offset-1 col-xs-10">
-                                            Invalid username/password - please try again!</div>
+                                            Invalid username/password - please try again!
+                                        </div>
                                     </c:if>
 
-                                    <!--		            
-									<div class="alert alert-success col-xs-offset-1 col-xs-10">
+                                    <!-- Checking for logout -->
+                                    <c:if test="${param.logout != null }">
+                                    
+									    <div class="alert alert-success col-xs-offset-1 col-xs-10">
 										You have been logged out.
-									</div>
-								    -->
+									    </div>
+                                    </c:if>
 
 					            </div>
 					        </div>
